@@ -1,0 +1,21 @@
+Usage: cramp [<OPTIONS> --] [<PATHS>]
+
+Cram, in parallel.
+
+If <OPTIONS> are given, they must be separated from test <PATHS> by "--".
+
+cramp options:
+  -jN, --jobs=N       number of tests to run in parallel
+  -h, --help          show this help message and exit
+  -V, --version       show version information and exit
+
+cram options:
+  -q, --quiet         don't print diffs
+  -v, --verbose       show filenames and test status
+  -d, --debug         write script output directly to the terminal
+  -E, --preserve-env  don't reset common environment variables
+  --keep-tmpdir       keep temporary directories
+  --shell=PATH        shell to use for running tests (default: /bin/sh)
+  --shell-opts=OPTS   arguments to invoke shell with
+  --indent=NUM        number of spaces to use for indentation (default: 2)
+  --xunit-file=PATH   path to write xUnit XML output
